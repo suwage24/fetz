@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WEBSITE</title>
+    
+    
+<style>
+    body, html {
+        font-family: "Times New Roman" !important;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    p, a, span, div, li, label, input, textarea, button {
+        font-family: "Times New Roman" !important;
+    }
+</style>
+</head>
+<body>
+<nav style="background-color: #2C3E50; padding: 15px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);">
+    <div style="
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    ">
+        <a href="Home.html" class="nav-link-pop" style="color: #00c08b; text-decoration: none; transition: color 0.3s; font-weight: bold;">
+            Home
+        </a>
+        <a href="mygallery.html" class="nav-link-pop" style="color: #00c08b; text-decoration: none; transition: color 0.3s; font-weight: bold;">
+            My Gallery
+        </a>
+        <a href="mybusiness.html" class="nav-link-pop" style="color: #00c08b; text-decoration: none; transition: color 0.3s; font-weight: bold;">
+            My Business
+        </a>
+        <a href="myblog.html" class="nav-link-pop" style="color: #00c08b; text-decoration: none; transition: color 0.3s; font-weight: bold;">
+            Blog
+        </a>
+        <a href="about.html" class="nav-link-pop" style="color: #00c08b; text-decoration: none; transition: color 0.3s; font-weight: bold;">
+            About
+        </a>
+        <a href="feedback.html" class="nav-link-pop" style="color: #00c08b; text-decoration: none; transition: color 0.3s; font-weight: bold;">
+            Feedback
+        </a>
+        <style>
+            .nav-link-pop:hover,
+            .nav-link-pop.active {
+            color: #fff !important;
+            background: #00c08b;
+            border-radius: 4px;
+            padding: 6px 16px;
+            }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll('.nav-link-pop');
+            links.forEach(function(link) {
+                if (window.location.pathname.toLowerCase().includes(link.getAttribute('href').toLowerCase())) {
+                link.classList.add('active');
+                }
+            });
+            });
+        </script>
+        
+    </div>
+</nav>
+
+<body>
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4 sticky-lg-top vh-100">
+                <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
+                    <img class="w-100 img-fluid mb-4" src="img/christine.jpg" alt="Image">
+                    <h1 class="text-primary mt-2">Christine Joy Fetalcorin</h1>
+                    <div class="mb-4" style="height: 22px;">
+                        <h4 class="typed-text-output d-inline-block text-light"></h4>
+                        <div class="typed-text d-none">Computer Science Student, Entrepreneur, Professional Bowler</div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-auto mb-3">
+                        <a class="btn btn-secondary btn-square mx-1" href="https://twitter.com/_suwage" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-secondary btn-square mx-1" href="https://facebook.com/Cj.Fetalcorin24" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-secondary btn-square mx-1" href="https://linkedin.com/in/christine-joy-fetalcorin-29195a362" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-secondary btn-square mx-1" href="https://instagram.com/_suwage" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="d-flex align-items-end justify-content-between border-top">
+                        <a href="" class="btn w-50 border-end">Download CV</a>
+                        <a href="#contact" class="btn w-50 btn-scroll">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">About Me</h1>
+                    <p>I’m a 24-year-old Computer Science student who loves learning about tech and solving problems. 
+                        When I’m not studying, you’ll probably find me at the bowling alley having fun or working on my business ideas. 
+                        I’m all about balancing my passions and growing both as a student and an entrepreneur.</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-sm-6 py-1"><span class="fw-medium text-primary">Name:</span> Christine Joy Fetalcorin </div>
+                        <div class="col-sm-6 py-1"><span class="fw-medium text-primary">Birthday:</span> 24 July 2001 </div>
+                        <div class="col-sm-6 py-1"><span class="fw-medium text-primary">Degree:</span> Bachelor</div>
+                        <div class="col-sm-6 py-1"><span class="fw-medium text-primary">Experience:</span> O </div>
+                        <div class="col-sm-6 py-1"><span class="fw-medium text-primary">Phone:</span> +63 9765138578</div>
+                        <div class="col-sm-6 py-1"><span class="fw-medium text-primary">Email:</span> christinehalle24@gmail.com</div>
+                        <div class="col-sm-6 py-1"><span class="fw-medium text-primary">Address:</span> Imus City, Cavite</div>
+                    </div>
+                    <div class="row g-4">
+                            <div class="col-md-4 col-lg-6 col-xl-4">
+                                <div class="d-flex bg-secondary p-4">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">0</h1>
+                                    <div class="ps-3">
+                                        <p class="mb-0">Years of</p>
+                                        <h5 class="mb-0">Experience</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6 col-xl-4">
+                                <div class="d-flex bg-secondary p-4">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">0</h1>
+                                    <div class="ps-3">
+                                        <p class="mb-0">Sad</p>
+                                        <h5 class="mb-0">Clients</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6 col-xl-4">
+                                <div class="d-flex bg-secondary p-4">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">0</h1>
+                                    <div class="ps-3">
+                                        <p class="mb-0">Incomplete</p>
+                                        <h5 class="mb-0">Projects</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Educational Background</h1>
+                    <div class="border-start border-2 border-light pt-2 ps-5">
+                        <div class="position-relative mb-4">
+                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                            <h5 class="mb-1">Unida Christian Colleges</h5>
+                            <p class="mb-2">Present</p>
+                            <p>Imus City, Cavite</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                            <h5 class="mb-1">Don Stevens Institute Inc.</h5>
+                            <p class="mb-2">2020</p>
+                            <p>Bacoor City, Cavite</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                            <h5 class="mb-1">Highway Hills Integrated School</h5>
+                            <p class="mb-2">2014</p>
+                            <p>Mandaluyong City, Metro Manila</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-secondary text-center p-5">
+                        <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
+                        <p class="text-white">Subscribe and get my latest article in your inbox</p>
+                        <div class="position-relative w-100">
+                            <input class="form-control bg-dark border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Portfolio</h1>
+                    <div class="row portfolio-container">
+                        <div class="col-md-6 mb-4 portfolio-item first">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <img class="img-fluid w-100" src="img/christine2.jpg" alt="">
+                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                    <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                        <i class="bi bi-plus text-light"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 portfolio-item second">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <img class="img-fluid w-100" src="img/christine3.jpg" alt="">
+                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                    <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                        <i class="bi bi-plus text-light"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 portfolio-item first">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <img class="img-fluid w-100" src="img/christine4.jpg" alt="">
+                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                    <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                        <i class="bi bi-plus text-light"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 portfolio-item second">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <img class="img-fluid w-100" src="img/christine5.jpg" alt="">
+                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                    <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                        <i class="bi bi-plus text-light"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 portfolio-item first">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <img class="img-fluid w-100" src="img/christine6.jpg" alt="">
+                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                    <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                        <i class="bi bi-plus text-light"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 portfolio-item second">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <img class="img-fluid w-100" src="img/christine7.jpg" alt="">
+                                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                    <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                        <i class="bi bi-plus text-light"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="col-lg-8">
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="title pb-3 mb-5">Testimonial</h1>
+                    <div id="testimonial-carousel" style="position: relative;">
+                        <div class="testimonial-slide" style="display: block;">
+                            <blockquote style="color: #00c08b; font-size: 5rem; font-style: italic; padding-left: 0; margin-bottom: 0.2rem; line-height: 0.2;">“</blockquote>
+                            <div style="font-size: 1.25rem; font-style: italic; color: #ffffff; margin-bottom: 1.0rem;">Christine is a dedicated and passionate individual who always gives her best in everything she does. Her positive attitude and commitment inspire those around her.</div>
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
+                                <img src="img/dong.webp" alt="Christine" style="width: 48px; height: 48px; object-fit: cover; border-radius: 0; border: 2px solid #00c08b;">
+                                <div>
+                                    <span style="font-weight: bold; color: #00c08b; font-size: 1.1rem;">Christian Abuan</span><br>
+                                    <span style="font-size: 1rem; color: #ffffff;">Bachelor of Computer Science</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide" style="display: none;">
+                            <blockquote style="color: #00c08b; font-size: 5rem; font-style: italic; padding-left: 0; margin-bottom: 0.2rem; line-height: 0.2;">“</blockquote>
+                            <div style="font-size: 1.25rem; font-style: italic; color: #ffffff; margin-bottom: 1.0rem;">A true leader and motivator, Christine always brings out the best in her team. Her expertise in computer science is impressive.</div>
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
+                                <img src="img/ian.gif" alt="Christine" style="width: 48px; height: 48px; object-fit: cover; border-radius: 0; border: 2px solid #00c08b;">
+                                <div>
+                                    <span style="font-weight: bold; color: #00c08b; font-size: 1.1rem;">Ivan Fortes</span><br>
+                                    <span style="font-size: 1rem; color: #ffffff;">Bachelor of Computer Science</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide" style="display: none;">
+                            <blockquote style="color: #00c08b; font-size: 5rem; font-style: italic; padding-left: 0; margin-bottom: 0.2rem; line-height: 0.2;">“</blockquote>
+                            <div style="font-size: 1.25rem; font-style: italic; color: #ffffff; margin-bottom: 1.0rem;">Christine’s creativity and dedication make her a standout student and entrepreneur. She is always willing to help others.</div>
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem;">
+                                <img src="img/van.jpg" alt="Christine" style="width: 48px; height: 48px; object-fit: cover; border-radius: 0; border: 2px solid #00c08b;">
+                                <div>
+                                    <span style="font-weight: bold; color: #00c08b; font-size: 1.1rem;">Christian Egera</span><br>
+                                    <span style="font-size: 1rem; color: #ffffff;">Entrepreneur</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: center; margin-top: 10px;">
+                            <span class="testimonial-dot" style="display: inline-block; width: 12px; height: 12px; background: #fff; border-radius: 0; margin: 0 6px; cursor: pointer; border: 2px solid #00c08b; transition: background 0.3s;"></span>
+                            <span class="testimonial-dot" style="display: inline-block; width: 12px; height: 12px; background: #fff; border-radius: 0; margin: 0 6px; cursor: pointer; border: 2px solid #00c08b; transition: background 0.3s;"></span>
+                            <span class="testimonial-dot" style="display: inline-block; width: 12px; height: 12px; background: #fff; border-radius: 0; margin: 0 6px; cursor: pointer; border: 2px solid #00c08b; transition: background 0.3s;"></span>
+                        </div>
+                    </div>
+                    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; width: 150%;">
+                    <script>
+                        
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const dots = document.querySelectorAll("#testimonial-carousel .testimonial-dot");
+                            const slides = document.querySelectorAll("#testimonial-carousel .testimonial-slide");
+                            dots.forEach((dot, idx) => {
+                                dot.addEventListener("click", function() {  
+                                    slides.forEach((slide, i) => {
+                                        slide.style.display = (i === idx) ? "block" : "none";
+                                    });    
+                                    dots.forEach(d => d.style.background = "#fff");
+                                    dot.style.background = "#00c08b";
+                                });
+                            });
+                            if (dots.length) dots[0].style.background = "#00c08b";
+                        });
+                    </script>
+
+                <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
+                    <h1 class="title pb-3 mb-5">Contact Me</h1>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0 bg-secondary" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control border-0 bg-secondary" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0 bg-secondary" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <section class="wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-secondary text-light text-center p-5">
+                        <div class="d-flex justify-content-center mt-auto mb-3">
+                        <a class="btn btn-secondary btn-square mx-1" href="https://twitter.com/_suwage" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-secondary btn-square mx-1" href="https://facebook.com/Cj.Fetalcorin24" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-secondary btn-square mx-1" href="https://linkedin.com/in/christine-joy-fetalcorin-29195a362" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-secondary btn-square mx-1" href="https://instagram.com/_suwage" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                        <div class="d-flex justify-content-center mb-3">
+        <a class="text-light px-3 border-end" href="Privacy.html">Privacy</a>
+        <a class="text-light px-3 border-end" href="Terms.html">Terms</a>
+        <a class="text-light px-3 border-end" href="Faq.html">FAQs</a>
+        <a class="text-light px-3" href="Help.html">Help</a>
+    </div>
+                        <p class="m-0">&copy; All Rights Reserved 2025. Designed by <a href="https://htmlcodex.com">Christine Joy Fetalcorin</a></p>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
